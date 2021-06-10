@@ -1,5 +1,6 @@
 import React from 'react';
 import { Router } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 // import Login from './pages/Login'; // Como criamos rotas nao usamos mais desta forma
 import Routes from './routes';
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Routes />
       <GlobalStyle />
+      <ToastContainer autoClose={3000} className="toast-container" />
     </Router>
   );
 }
