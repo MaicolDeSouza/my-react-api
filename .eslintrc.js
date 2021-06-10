@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'prettier',
-    //'prettier/react',
+    // 'prettier/react',
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -17,18 +17,13 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'prettier',
-    'react-hooks',
-
-  ],
+  plugins: ['react', 'prettier', 'react-hooks'],
   rules: {
-    'prettier/prettier' : 'error',
+    'prettier/prettier': 'error',
     'react/jsx-filename-extension': 0,
     'import/prefer-default-export': 0,
     'react/state-in-constructor': 0,
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-    'react-hooks/exhaustive-deps': 'warn' // Checks effect dependencies
+    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
   },
 };

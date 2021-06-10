@@ -1,20 +1,20 @@
 import React from 'react';
+import { Router } from 'react-router-dom';
 
 // import Login from './pages/Login'; // Como criamos rotas nao usamos mais desta forma
-import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
-
 import GlobalStyle from './styles/GlobalStyles';
 import Header from './components/Header';
+import history from './services/history';
 
 function App() {
   //  return <h1>Hello world</h1>;
   return (
-    <BrowserRouter>
+    <Router history={history}>
       <Header />
       <Routes />
       <GlobalStyle />
-    </BrowserRouter>
+    </Router>
   );
 }
 

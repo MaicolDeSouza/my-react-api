@@ -1,7 +1,8 @@
 import React from 'react';
-// IMportar as funcoes que o router vai utilizar
-import { Switch, Route } from 'react-router-dom';
+// Importar as funcoes que o router vai utilizar
+import { Switch } from 'react-router-dom';
 
+import MyRoute from './MyRoute';
 // Importar o componente que queremos fazer a rota
 import Login from '../pages/Login';
 import Page404 from '../pages/Page404';
@@ -10,8 +11,8 @@ import Page404 from '../pages/Page404';
 export default function Routes() {
   return (
     <Switch>
-      <Route exact path="/" component={Login} />
-      <Route exact path="*" component={Page404} />
+      <MyRoute exact path="/" component={Login} />
+      <MyRoute path="*" component={Page404} />
     </Switch>
   );
 }
